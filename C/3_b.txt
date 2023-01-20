@@ -1,0 +1,7 @@
+int sub()
+{
+int s=10;
+if s < 10;
+int c = a - b;
+return c;
+}

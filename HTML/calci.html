@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calc" ng-controller="calculate">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using Angular</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-ie8-build/1.4.7/angular.min.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+    <input type="number" placeholder="Enter a number" ng-model="n1" name="n1"><br/><br/>
+    <input type="number" placeholder="Enter a number" ng-model="n2" name="n2"><br/><br/>
+    <input type="submit" value="+" ng-click="operator('+')">
+    <input type="submit" value="-" ng-click="operator('-')"><br/>
+    <input type="submit" value="*" ng-click="operator('*')">
+    <input type="submit" value="/" ng-click="operator('/')"><br/><br/>
+    <input type="submit" value="{{result}}">
+</body>
+</html>
